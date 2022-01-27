@@ -66,11 +66,13 @@ public class MarkdownParse {
                 } 
             }
 
-            if (check == false) {
+            if (check == false && !markdown.substring(openParen + 1, closeParen).contains(" ")) {
                 toReturn.add(markdown.substring(openParen + 1, closeParen));
             }
+            
             currentIndex = closeParen + 1;
         }
+
         return toReturn;
     }
     
