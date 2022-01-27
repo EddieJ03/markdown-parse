@@ -55,7 +55,7 @@ public class MarkdownParse {
             nextCloseBracket = markdown.indexOf("]", nextOpenBracket);
             openParen = markdown.indexOf("(", nextCloseBracket);
             closeParen = markdown.indexOf(")", openParen);
-            if (nextOpenBracket == -1 || nextCloseBracket == -1 || openParen == -1 || closeParen == -1) break;
+            
             
             //run for loop and .contains on the substring?
             boolean check = false;
