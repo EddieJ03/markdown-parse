@@ -66,7 +66,7 @@ public class MarkdownParse {
                 } 
             }
 
-            if (check == false && !markdown.substring(openParen + 1, closeParen).contains(" ")) {
+            if (check == false && (nextCloseBracket != nextOpenBracket + 1) && (nextCloseBracket == openParen - 1) && !markdown.substring(openParen + 1, closeParen).contains(" ")) {
                 toReturn.add(markdown.substring(openParen + 1, closeParen));
             }
             
