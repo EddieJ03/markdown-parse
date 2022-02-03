@@ -4,6 +4,6 @@ import org.junit.*;
 public class BadTest {
     @Test
     public void failAdd() {
-        assertEquals(1+1, 10);
+        assertEquals(1+1, 2);
     }
 }
